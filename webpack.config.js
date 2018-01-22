@@ -13,7 +13,10 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        query: {
+          presets: ['react']
+      }
       },
       {
         test: /\.scss$/,
@@ -34,3 +37,14 @@ module.exports = {
   // files. It's like `nodemon` for the front end!
   plugins: isDev ? [new LiveReloadPlugin({appendScriptTag: true})] : []
 }
+
+
+loaders: [{
+  test: /\.jsx?$/,
+  exclude: /node_modules/,
+  loader: 'babel-loader',
+  query: {
+      presets: ['react', 'es2015']
+  }
+}
+]
