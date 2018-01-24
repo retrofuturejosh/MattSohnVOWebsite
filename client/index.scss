@@ -133,6 +133,14 @@ h1 {
   -webkit-animation:colorchange 2s;      
 }
 
+a {
+  color: #e1e1ed;
+}
+
+a:hover {
+  color: #98c0f1;
+}
+
 img {
   // -webkit-animation: greyscale 10s 1;
   -webkit-animation: picturemove 5s;
@@ -260,5 +268,9 @@ img {
 
   .audio-examples-title, .audio-examples-player {
     margin-left: 0 !important;
+  }
+
+  .about {
+    height: calc(100vh - 7em);
   }
  }

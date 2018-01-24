@@ -11,7 +11,7 @@ export const Main = (props) => {
         <Player/>
       </div>
       <div className="footer">
-      <h3>Contact: mattbsohn@gmail.com</h3>
+      <h3>Contact: <a href="mailto:mattbsohn@gmail.com?subject=RE: Voice Over Services">mattbsohn@gmail.com</a></h3>
       </div>
     </div>
   )
