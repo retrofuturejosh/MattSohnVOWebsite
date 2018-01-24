@@ -10,6 +10,9 @@ export const Main = (props) => {
         <About/>
         <Player/>
       </div>
+      <div className="footer">
+      <h3>Contact: mattbsohn@gmail.com</h3>
+      </div>
     </div>
   )
 }

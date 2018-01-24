@@ -1,6 +1,7 @@
 html {
   background-color: #1a1a1a;
   color: #e1e1ed;
+  font-weight: 100;
 
 }
 
@@ -28,6 +29,7 @@ body {
 
 
 .main {
+  -webkit-animation: backgroundfadein 5s;
   background-color: rgb(53, 53, 53);
   display: flex;
   border-radius: 1em;
@@ -62,26 +64,36 @@ body {
   & h3 {
     margin: 0.25em;
     margin-bottom: 0.5em;
+    -webkit-animation:colorchange2 2.5s; 
   }
 }
 
 .about {
   &-content {
     max-width: 35em;
+    margin-bottom: 1em;
+    &-bio {
+      -webkit-animation: fadeinslower 6.3s;
+    }
   }
 
   &-title {
     display: flex;
     flex-direction: row;
+    -webkit-animation: fadein 5.7s;
 
   }
 }
 
+
+
 .audio{
+  -webkit-animation: fadein 5.7s;
 
   &-examples {
     margin: 0;
     margin-bottom: 1em;
+    -webkit-animation: fadeinslower 6.3s;
 
     &-title{
       margin: -0;
@@ -89,25 +101,41 @@ body {
   }
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+  -webkit-animation: fadeinslower 5.7s;
+}
+
 h1, h2 {
-  color: #9d9dd8;
+  color: #98c0f1;
 }
 
 h3 {
   color: #e1e1ed;
   margin: 0.25em;
+  font-weight: 100;
 }
 
 h2 {
   margin-top: 0.5 em;
   margin: 0.5em;
   margin-bottom: 1em;
+  // font-weight: 3000;
   h1 {
-    color: #9d9dd8;
+    color: #98c0f1;
   }
 }
 
+h1 {
+  font-size: 3em;
+  -webkit-animation:colorchange 2s;      
+}
+
 img {
+  // -webkit-animation: greyscale 10s 1;
+  -webkit-animation: picturemove 5s;
   width: 10em;
   height: 10em;
   border-radius: 5em;
@@ -115,6 +143,114 @@ img {
   margin-bottom: 0.7em;
   float: left;
 }
+
+@-webkit-keyframes picturemove {
+  0% {
+      -webkit-filter: grayscale(1);
+      width: 50vw;
+      height: 50vw;
+      border-radius: 0;
+      position: absolute;
+      left: 25vw;
+      right: 25vw;
+      top: 5em;
+  }
+  10% {
+    -webkit-filter: grayscale(1);
+  }
+
+  50% {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 0;
+    position: absolute;
+    left: 25vw;
+    right: 25vw;
+    top: 7em;
+    -webkit-filter: grayscale(0);
+  }
+  100% {
+      width: 10em;
+      height: 10em;
+      border-radius: 5em;
+      position: absolute;
+      left: 2.5em;
+      top: 10.6em;
+  }
+}
+
+@-webkit-keyframes backgroundfadein {
+  0% {
+    background-color: #1a1a1a;
+  }
+
+  60% {
+    background-color: #1a1a1a;
+  }
+
+  100% {
+    background-color: rgb(53, 53, 53);
+  }
+}
+
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeinslower {
+  0% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color:  #1a1a1a;
+  }
+  80% {
+    color: #95a7bd;
+  }
+  100% {
+    color: #98c0f1;
+  }
+}
+
+@-webkit-keyframes colorchange2 {
+  0% {
+    color:  #1a1a1a;
+  }
+  70% {
+    color:  #1a1a1a;
+  }
+  100% {
+    color: #e1e1ed;
+  }
+}
+
+@-webkit-keyframes greyscale {
+  0%   { -webkit-filter: grayscale(1); /* Google Chrome & Webkit Nightlies */}
+  100% { -webkit-filter: grayscale(0); /* Google Chrome & Webkit Nightlies */ }
+}
+
 
 @media (max-width: 640px) { 
   .main {

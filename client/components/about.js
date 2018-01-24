@@ -8,6 +8,7 @@ export const About = () => {
       </div>
       <div className="about-content">
         <img id="headshot" src="/Matt Ellison.jpeg" />
+        <div className="about-content-bio">
         This is all the info Matt wanted to include. Yay!
         Blah blah blah
         Blah blah blah
@@ -29,6 +30,7 @@ export const About = () => {
         Blah blah blah
         Blah blah blah
         Blah blah blah
+        </div>
       </div>
     </div>
   )

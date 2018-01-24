@@ -3509,7 +3509,11 @@ const About = () => {
       "div",
       { className: "about-content" },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { id: "headshot", src: "/Matt Ellison.jpeg" }),
-      "This is all the info Matt wanted to include. Yay! Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah"
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        { className: "about-content-bio" },
+        "This is all the info Matt wanted to include. Yay! Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah"
+      )
     )
   );
 };
@@ -3576,6 +3580,15 @@ const Main = props => {
       { className: 'main' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__index__["d" /* About */], null),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__index__["e" /* Player */], null)
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'footer' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'h3',
+        null,
+        'Contact: mattbsohn@gmail.com'
+      )
     )
   );
 };
@@ -3724,7 +3737,7 @@ exports = module.exports = __webpack_require__(56)();
 
 
 // module
-exports.push([module.i, "html {\n  background-color: #1a1a1a;\n  color: #e1e1ed; }\n\nbody {\n  font-family: sans-serif; }\n  body a {\n    text-decoration: none; }\n  body label {\n    display: block; }\n  body nav a {\n    display: inline-block;\n    margin: 1em; }\n  body form div {\n    margin: 1em;\n    display: inline-block; }\n\n.main {\n  background-color: #353535;\n  display: flex;\n  border-radius: 1em; }\n  .main div {\n    flex-grow: 1;\n    margin-left: 1em;\n    margin-right: 1em; }\n\n.navbar {\n  display: flex;\n  flex-direction: column;\n  margin-top: 1em; }\n  .navbar-title {\n    margin-top: 0;\n    justify-content: center;\n    display: flex; }\n  .navbar-info {\n    justify-content: center;\n    display: flex; }\n  .navbar h1 {\n    margin: 0; }\n  .navbar h3 {\n    margin: 0.25em;\n    margin-bottom: 0.5em; }\n\n.about-content {\n  max-width: 35em; }\n\n.about-title {\n  display: flex;\n  flex-direction: row; }\n\n.audio-examples {\n  margin: 0;\n  margin-bottom: 1em; }\n  .audio-examples-title {\n    margin: -0; }\n\nh1, h2 {\n  color: #9d9dd8; }\n\nh3 {\n  color: #e1e1ed;\n  margin: 0.25em; }\n\nh2 {\n  margin-top: 0.5 em;\n  margin: 0.5em;\n  margin-bottom: 1em; }\n  h2 h1 {\n    color: #9d9dd8; }\n\nimg {\n  width: 10em;\n  height: 10em;\n  border-radius: 5em;\n  margin-right: 0.7em;\n  margin-bottom: 0.7em;\n  float: left; }\n\n@media (max-width: 640px) {\n  .main {\n    flex-direction: column; }\n  .audio-examples-title, .audio-examples-player {\n    margin-left: 0 !important; } }\n", ""]);
+exports.push([module.i, "html {\n  background-color: #1a1a1a;\n  color: #e1e1ed;\n  font-weight: 100; }\n\nbody {\n  font-family: sans-serif; }\n  body a {\n    text-decoration: none; }\n  body label {\n    display: block; }\n  body nav a {\n    display: inline-block;\n    margin: 1em; }\n  body form div {\n    margin: 1em;\n    display: inline-block; }\n\n.main {\n  -webkit-animation: backgroundfadein 5s;\n  background-color: #353535;\n  display: flex;\n  border-radius: 1em; }\n  .main div {\n    flex-grow: 1;\n    margin-left: 1em;\n    margin-right: 1em; }\n\n.navbar {\n  display: flex;\n  flex-direction: column;\n  margin-top: 1em; }\n  .navbar-title {\n    margin-top: 0;\n    justify-content: center;\n    display: flex; }\n  .navbar-info {\n    justify-content: center;\n    display: flex; }\n  .navbar h1 {\n    margin: 0; }\n  .navbar h3 {\n    margin: 0.25em;\n    margin-bottom: 0.5em;\n    -webkit-animation: colorchange2 2.5s; }\n\n.about-content {\n  max-width: 35em;\n  margin-bottom: 1em; }\n  .about-content-bio {\n    -webkit-animation: fadeinslower 6.3s; }\n\n.about-title {\n  display: flex;\n  flex-direction: row;\n  -webkit-animation: fadein 5.7s; }\n\n.audio {\n  -webkit-animation: fadein 5.7s; }\n  .audio-examples {\n    margin: 0;\n    margin-bottom: 1em;\n    -webkit-animation: fadeinslower 6.3s; }\n    .audio-examples-title {\n      margin: -0; }\n\n.footer {\n  display: flex;\n  justify-content: center;\n  margin-top: 0.5em;\n  -webkit-animation: fadeinslower 5.7s; }\n\nh1, h2 {\n  color: #98c0f1; }\n\nh3 {\n  color: #e1e1ed;\n  margin: 0.25em;\n  font-weight: 100; }\n\nh2 {\n  margin-top: 0.5 em;\n  margin: 0.5em;\n  margin-bottom: 1em; }\n  h2 h1 {\n    color: #98c0f1; }\n\nh1 {\n  font-size: 3em;\n  -webkit-animation: colorchange 2s; }\n\nimg {\n  -webkit-animation: picturemove 5s;\n  width: 10em;\n  height: 10em;\n  border-radius: 5em;\n  margin-right: 0.7em;\n  margin-bottom: 0.7em;\n  float: left; }\n\n@-webkit-keyframes picturemove {\n  0% {\n    -webkit-filter: grayscale(1);\n    width: 50vw;\n    height: 50vw;\n    border-radius: 0;\n    position: absolute;\n    left: 25vw;\n    right: 25vw;\n    top: 5em; }\n  10% {\n    -webkit-filter: grayscale(1); }\n  50% {\n    width: 50vw;\n    height: 50vw;\n    border-radius: 0;\n    position: absolute;\n    left: 25vw;\n    right: 25vw;\n    top: 7em;\n    -webkit-filter: grayscale(0); }\n  100% {\n    width: 10em;\n    height: 10em;\n    border-radius: 5em;\n    position: absolute;\n    left: 2.5em;\n    top: 10.6em; } }\n\n@-webkit-keyframes backgroundfadein {\n  0% {\n    background-color: #1a1a1a; }\n  60% {\n    background-color: #1a1a1a; }\n  100% {\n    background-color: #353535; } }\n\n@-webkit-keyframes fadein {\n  0% {\n    opacity: 0; }\n  75% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes fadeinslower {\n  0% {\n    opacity: 0; }\n  90% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes colorchange {\n  0% {\n    color: #1a1a1a; }\n  80% {\n    color: #95a7bd; }\n  100% {\n    color: #98c0f1; } }\n\n@-webkit-keyframes colorchange2 {\n  0% {\n    color: #1a1a1a; }\n  70% {\n    color: #1a1a1a; }\n  100% {\n    color: #e1e1ed; } }\n\n@-webkit-keyframes greyscale {\n  0% {\n    -webkit-filter: grayscale(1);\n    /* Google Chrome & Webkit Nightlies */ }\n  100% {\n    -webkit-filter: grayscale(0);\n    /* Google Chrome & Webkit Nightlies */ } }\n\n@media (max-width: 640px) {\n  .main {\n    flex-direction: column; }\n  .audio-examples-title, .audio-examples-player {\n    margin-left: 0 !important; } }\n", ""]);
 
 // exports
 
