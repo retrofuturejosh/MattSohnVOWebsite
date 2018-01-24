@@ -1,12 +1,15 @@
 import React from 'react';
-import { Player } from './index'
+import { NavBar, Player, About } from './index';
 
 export const Main = (props) => {
 
   return (
-    <div>
-      <h1>Matt Sohn</h1>
-      <Player/>
+    <div className="app">
+      <NavBar/>
+      <div className="main">
+        <About/>
+        <Player/>
+      </div>
     </div>
   )
 }

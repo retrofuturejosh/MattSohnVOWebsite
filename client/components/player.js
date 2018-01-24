@@ -4,21 +4,21 @@ import { Audio } from './index'
 export const Player = (props) => {
 
   return (
-    <div className="Audio">
-      <div className="Audio-Examples">
-        <div className="Audio-Examples-Title">
-          Pride and Prejudice
+    <div className="audio">
+      <div className="audio-examples">
+        <div className="audio-examples-title">
+          Audiobook
         </div>
         <Audio mp3="/audio/Pride and Prejudice.mp3" />
       </div>
-      <div className="Audio-Examples">
-        <div className="Audio-Examples-Title">
-          Test
+      <div className="audio-examples">
+        <div className="audio-examples-title">
+          Educational
         </div>
         <Audio mp3="/audio/Test Cut.mp3" />
       </div>
-      <div className="Audio-Examples">
-        <div className="Audio-Examples-Title">
+      <div className="audio-examples">
+        <div className="audio-examples-title">
           Podcast
         </div>
         <Audio mp3="/audio/Weekly Weather Minute.mp3" />
