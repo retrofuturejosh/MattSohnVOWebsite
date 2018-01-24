@@ -233,12 +233,14 @@ img {
 @-webkit-keyframes colorchange {
   0% {
     color:  #1a1a1a;
+    margin-top: 0.4em;
   }
   80% {
     color: #95a7bd;
   }
   100% {
     color: #98c0f1;
+    margin-top: 0;
   }
 }
 
@@ -271,6 +273,24 @@ img {
   }
 
   .about {
-    height: calc(100vh - 7em);
+    height: 18em;
   }
  }
+
+ @media (max-width: 475px) { 
+   .about {
+     height: 23em;
+   }
+ }
+
+ @media (max-width: 370px) { 
+  .about {
+    height: 26em;
+  }
+}
+
+@media (max-width: 370px) { 
+  .about {
+    height: inherit;
+  }
+}
