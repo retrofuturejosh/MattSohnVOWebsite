@@ -5,6 +5,9 @@ export const Player = (props) => {
 
   return (
     <div className="audio">
+      <div className="audio-title" >
+        <h2>Example Work </h2>
+      </div>
       <div className="audio-examples">
         <div className="audio-examples-title">
           Audiobook

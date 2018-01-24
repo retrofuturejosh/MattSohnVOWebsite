@@ -4,10 +4,21 @@ export const About = () => {
   return (
     <div className="about">
       <div className="about-title">
-        About
+        <h2> About </h2>
       </div>
-      <div>
+      <div className="about-content">
+        <img id="headshot" src="/Matt Ellison.jpeg" />
         This is all the info Matt wanted to include. Yay!
+        Blah blah blah
+        Blah blah blah
+        Blah blah blah
+        Blah blah blah
+        Blah blah blah
+        Blah blah blah
+        Blah blah blah
+        Blah blah blah
+        Blah blah blah
+        Blah blah blah
         Blah blah blah
         Blah blah blah
         Blah blah blah

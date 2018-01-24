@@ -4,10 +4,10 @@ export const NavBar = () => {
   return (
     <div className="navbar">
       <div className="navbar-title">
-        Matt Sohn
+        <h1> Matt Sohn </h1>
       </div>
       <div className="navbar-info">
-        Voice Over
+        <h3>Voice Over Artist</h3>
       </div>
     </div>
   )
