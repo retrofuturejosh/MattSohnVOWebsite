@@ -167,21 +167,19 @@ img {
   }
 
   60% {
+    -webkit-filter: grayscale(0);
     width: 50vw;
     height: 50vw;
     border-radius: 0;
     position: absolute;
-    margin-left: calc(25vw - 2.5em);
     margin-top: -3em;
-    -webkit-filter: grayscale(0);
+    margin-left: calc(25vw - 2.5em);
   }
   100% {
       width: 10em;
       height: 10em;
       border-radius: 5em;
       position: absolute;
-      left: 2.5em;
-      top: 10.6em;
   }
 }
 
