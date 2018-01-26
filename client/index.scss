@@ -45,6 +45,16 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 1em;
+  -webkit-animation: backgroundpicfadein 3s;
+
+
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);
+  background-position: center;
+  border-radius: 1em;
+  height: 9em;
+  margin-bottom: 1em;
+  background-repeat-x: no-repeat;
+  background-size: 100%;
 
   &-title {
     margin-top: 0;
@@ -307,6 +317,39 @@ img {
 }
 
 
+@-webkit-keyframes backgroundpicfadein {
+  0% {
+    background-image: linear-gradient(to bottom, rgba(26,26,26, 1) 0%,rgba(26,26,26, 1) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);
+  }
+  75% {
+    background-image: linear-gradient(to bottom, rgba(26,26,26, 1) 0%,rgba(26,26,26, 1) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);
+  }
+  77% {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .95) 0%,rgba(26,26,26, .95) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);
+  }
+  80% {
+    background-image: linear-gradient(to bottom, rgba(26, 26, 26, .9) 0%,rgba(26, 26, 26, .9) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);
+  }
+  83% {
+    background-image: linear-gradient(to bottom, rgba(13, 13, 13, .85) 0%,rgba(13,13,13, .85) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);
+  }
+  85% {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .8) 0%,rgba(0, 0, 0, .8) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);
+  }
+  87% {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75) 0%,rgba(0, 0, 0, .75) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);
+  }
+  90% {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .7) 0%,rgba(0, 0, 0, .7) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);
+  }
+  95% {
+    background-image: linear-gradient(to bottom, rgba(0,0,0, .65) 0%,rgba(0,0,0, .65) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);
+  }
+  100% {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%,rgba(0, 0, 0, 0.6) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);
+  }
+}
+
  @media (max-width: 765px) { 
   img {
     margin-right: 40%;
@@ -333,14 +376,6 @@ img {
   }
  }
 
-// @media (max-width: 720px) { 
-//   img {
-//     margin-right: 40%;
-//     margin-bottom: 1em;
-//   }
-// }
-
-//750, 720
 
  @media (max-width: 475px) { 
    .about {
@@ -369,15 +404,16 @@ img {
 }
 
 
-@media (min-width: 1000px) { 
-  img {
-    margin-bottom: 4em;
-  }
-}
-
 
 @media (max-width: 420px) { 
   .audio-examples {
     margin-left: 0.2em;
+  }
+}
+
+
+@media (min-width: 1000px) { 
+  img {
+    margin-bottom: 4em;
   }
 }
