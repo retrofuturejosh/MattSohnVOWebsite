@@ -844,25 +844,59 @@ var locationsAreEqual = function locationsAreEqual(a, b) {
 
 /***/ }),
 /* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__main__ = __webpack_require__(50);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__main__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__player__ = __webpack_require__(52);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_1__player__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__audio__ = __webpack_require__(49);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__audio__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about__ = __webpack_require__(48);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__about__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navbar__ = __webpack_require__(51);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_4__navbar__["a"]; });
-//'central export' for components
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
+var _main = __webpack_require__(50);
 
+Object.defineProperty(exports, 'Main', {
+  enumerable: true,
+  get: function get() {
+    return _main.Main;
+  }
+});
 
+var _player = __webpack_require__(52);
+
+Object.defineProperty(exports, 'Player', {
+  enumerable: true,
+  get: function get() {
+    return _player.Player;
+  }
+});
+
+var _audio = __webpack_require__(49);
+
+Object.defineProperty(exports, 'Audio', {
+  enumerable: true,
+  get: function get() {
+    return _audio.Audio;
+  }
+});
+
+var _about = __webpack_require__(48);
+
+Object.defineProperty(exports, 'About', {
+  enumerable: true,
+  get: function get() {
+    return _about.About;
+  }
+});
+
+var _navbar = __webpack_require__(51);
+
+Object.defineProperty(exports, 'NavBar', {
+  enumerable: true,
+  get: function get() {
+    return _navbar.NavBar;
+  }
+});
 
 /***/ }),
 /* 13 */
@@ -3384,30 +3418,40 @@ module.exports = g;
 
 /***/ }),
 /* 45 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = Routes;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_redux__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__history__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components__ = __webpack_require__(12);
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Routes;
 
+var _react = __webpack_require__(1);
 
+var _react2 = _interopRequireDefault(_react);
 
+var _reactRedux = __webpack_require__(90);
+
+var _reactRouter = __webpack_require__(98);
+
+var _history = __webpack_require__(53);
+
+var _history2 = _interopRequireDefault(_history);
+
+var _components = __webpack_require__(12);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * COMPONENT
  */
 function Routes() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_2_react_router__["a" /* Router */],
-    { history: __WEBPACK_IMPORTED_MODULE_3__history__["a" /* default */] },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components__["a" /* Main */], null)
+  return _react2.default.createElement(
+    _reactRouter.Router,
+    { history: _history2.default },
+    _react2.default.createElement(_components.Main, null)
   );
 }
 
@@ -3485,31 +3529,40 @@ if(false) {
 
 /***/ }),
 /* 48 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 
 
-const About = () => {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.About = undefined;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var About = exports.About = function About() {
+  return _react2.default.createElement(
     "div",
     { className: "about" },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(
       "div",
       { className: "about-title" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      _react2.default.createElement(
         "h2",
         null,
         " About "
       )
     ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(
       "div",
       { className: "about-content" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { id: "headshot", src: "/Matt Ellison.jpeg" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      _react2.default.createElement("img", { id: "headshot", src: "/Matt Ellison.jpeg" }),
+      _react2.default.createElement(
         "div",
         { className: "about-content-bio" },
         "Simply put, as a classically trained theatre artist and operatic vocalist, I aim to bring life to words. More specifically, I draw on my knowledge of resonance, tone, character, diction, and dialects to bring a greater depth of understanding to written copy. My past work with educational organizations & advertisers combined with extensive experience in dramatized speech make me a versatile and informed voice artist, able to accommodate a wide range of client needs."
@@ -3517,35 +3570,42 @@ const About = () => {
     )
   );
 };
-/* harmony export (immutable) */ __webpack_exports__["a"] = About;
-
 
 /***/ }),
 /* 49 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 
 
-const Audio = props => {
-  const mp3 = props.mp3;
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Audio = undefined;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Audio = exports.Audio = function Audio(props) {
+  var mp3 = props.mp3;
+  return _react2.default.createElement(
     "div",
     { className: "audio-examples-player" },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(
       "audio",
       {
         controls: true,
         controlsList: "nodownload",
         className: "audio-examples-player-bar" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("source", { src: mp3, type: "audio/mp3" }),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      _react2.default.createElement("source", { src: mp3, type: "audio/mp3" }),
+      _react2.default.createElement(
         "p",
         null,
         "Your browser doesn't support HTML5 audio. Here is a ",
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        _react2.default.createElement(
           "a",
           { href: mp3 },
           "link to the audio"
@@ -3555,40 +3615,47 @@ const Audio = props => {
     )
   );
 };
-/* harmony export (immutable) */ __webpack_exports__["a"] = Audio;
-
 
 /***/ }),
 /* 50 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(12);
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Main = undefined;
 
-const Main = props => {
+var _react = __webpack_require__(1);
 
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+var _react2 = _interopRequireDefault(_react);
+
+var _index = __webpack_require__(12);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Main = exports.Main = function Main(props) {
+
+  return _react2.default.createElement(
     'div',
     { className: 'app' },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__index__["c" /* NavBar */], null),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(_index.NavBar, null),
+    _react2.default.createElement(
       'div',
       { className: 'main' },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__index__["d" /* About */], null),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__index__["e" /* Player */], null)
+      _react2.default.createElement(_index.About, null),
+      _react2.default.createElement(_index.Player, null)
     ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(
       'div',
       { className: 'footer' },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      _react2.default.createElement(
         'h3',
         null,
         'Contact: ',
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        _react2.default.createElement(
           'a',
           { href: 'mailto:mattbsohn@gmail.com?subject=RE: Voice Over Services' },
           'mattbsohn@gmail.com'
@@ -3597,35 +3664,42 @@ const Main = props => {
     )
   );
 };
-/* harmony export (immutable) */ __webpack_exports__["a"] = Main;
-
 
 /***/ }),
 /* 51 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 
 
-const NavBar = () => {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.NavBar = undefined;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var NavBar = exports.NavBar = function NavBar() {
+  return _react2.default.createElement(
     "div",
     { className: "navbar" },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(
       "div",
       { className: "navbar-title" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      _react2.default.createElement(
         "h1",
         null,
         " Matt Sohn "
       )
     ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(
       "div",
       { className: "navbar-info" },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      _react2.default.createElement(
         "h3",
         null,
         "Voice Over Artist"
@@ -3633,105 +3707,124 @@ const NavBar = () => {
     )
   );
 };
-/* harmony export (immutable) */ __webpack_exports__["a"] = NavBar;
-
 
 /***/ }),
 /* 52 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__index__ = __webpack_require__(12);
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Player = undefined;
 
-const Player = props => {
+var _react = __webpack_require__(1);
 
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+var _react2 = _interopRequireDefault(_react);
+
+var _index = __webpack_require__(12);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Player = exports.Player = function Player(props) {
+
+  return _react2.default.createElement(
     'div',
     { className: 'audio' },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(
       'div',
       { className: 'audio-title' },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      _react2.default.createElement(
         'h2',
         null,
         'Examples '
       )
     ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(
       'div',
       { className: 'audio-examples' },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      _react2.default.createElement(
         'div',
         { className: 'audio-examples-title' },
         'Audiobook'
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__index__["b" /* Audio */], { mp3: '/audio/Pride and Prejudice.mp3' })
+      _react2.default.createElement(_index.Audio, { mp3: '/audio/Pride and Prejudice.mp3' })
     ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(
       'div',
       { className: 'audio-examples' },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      _react2.default.createElement(
         'div',
         { className: 'audio-examples-title' },
         'Educational'
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__index__["b" /* Audio */], { mp3: '/audio/Test Cut.mp3' })
+      _react2.default.createElement(_index.Audio, { mp3: '/audio/Test Cut.mp3' })
     ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    _react2.default.createElement(
       'div',
       { className: 'audio-examples' },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      _react2.default.createElement(
         'div',
         { className: 'audio-examples-title' },
         'Podcast'
       ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__index__["b" /* Audio */], { mp3: '/audio/Weekly Weather Minute.mp3' })
+      _react2.default.createElement(_index.Audio, { mp3: '/audio/Weekly Weather Minute.mp3' })
     )
   );
 };
-/* harmony export (immutable) */ __webpack_exports__["a"] = Player;
-
 
 /***/ }),
 /* 53 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_createBrowserHistory__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_createBrowserHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_history_createBrowserHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_history_createMemoryHistory__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_history_createMemoryHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_history_createMemoryHistory__);
+/* WEBPACK VAR INJECTION */(function(process) {
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
+var _createBrowserHistory = __webpack_require__(64);
 
-const history = process.env.NODE_ENV === 'test' ? __WEBPACK_IMPORTED_MODULE_1_history_createMemoryHistory___default()() : __WEBPACK_IMPORTED_MODULE_0_history_createBrowserHistory___default()();
+var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
-/* harmony default export */ __webpack_exports__["a"] = (history);
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
+var _createMemoryHistory = __webpack_require__(27);
+
+var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var history = process.env.NODE_ENV === 'test' ? (0, _createMemoryHistory2.default)() : (0, _createBrowserHistory2.default)();
+
+exports.default = history;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 54 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_scss__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__routes__ = __webpack_require__(45);
 
 
+__webpack_require__(47);
 
+var _react = __webpack_require__(1);
 
+var _react2 = _interopRequireDefault(_react);
 
-__WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__routes__["a" /* default */], null), document.getElementById('app'));
+var _reactDom = __webpack_require__(46);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _routes = __webpack_require__(45);
+
+var _routes2 = _interopRequireDefault(_routes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_reactDom2.default.render(_react2.default.createElement(_routes2.default, null), document.getElementById('app'));
 
 /***/ }),
 /* 55 */
@@ -3742,7 +3835,7 @@ exports = module.exports = __webpack_require__(56)();
 
 
 // module
-exports.push([module.i, "html {\n  background-color: #1a1a1a;\n  color: #e1e1ed;\n  font-weight: 100; }\n\nbody {\n  font-family: 'Montserrat' !important; }\n  body a {\n    text-decoration: none; }\n  body label {\n    display: block; }\n  body nav a {\n    display: inline-block;\n    margin: 1em; }\n  body form div {\n    margin: 1em;\n    display: inline-block; }\n\n.main {\n  background-color: #1a1a1a;\n  display: flex;\n  border-radius: 1em; }\n  .main div {\n    flex-grow: 1;\n    margin-left: 1em;\n    margin-right: 1em; }\n\n.navbar {\n  display: flex;\n  flex-direction: column;\n  margin-top: 1em;\n  -webkit-animation: backgroundpicfadein 3s;\n  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);\n  background-position: center;\n  border-radius: 1em;\n  height: 9em;\n  margin-bottom: 1em;\n  background-repeat-x: no-repeat;\n  background-size: 100%; }\n  .navbar-title {\n    margin-top: 0;\n    justify-content: center;\n    display: flex;\n    text-align: center; }\n  .navbar-info {\n    justify-content: center;\n    display: flex; }\n  .navbar h1 {\n    margin: 0; }\n  .navbar h3 {\n    margin: 0.25em;\n    margin-bottom: 0.5em;\n    color: white !important;\n    -webkit-animation: colorchange2 3.4s; }\n\n.about {\n  -webkit-animation: backgroundfadein 6.8s;\n  background-color: #2b2b2b;\n  border-radius: 0.5em;\n  margin-right: 0.5em !important; }\n  .about-content {\n    max-width: 35em;\n    margin-bottom: 1em; }\n    .about-content-bio {\n      -webkit-animation: fadeinslower 5.7s; }\n  .about-title {\n    display: flex;\n    flex-direction: row;\n    -webkit-animation: fadeinslower 5.7s; }\n\n.audio {\n  background-color: #2b2b2b;\n  border-radius: 0.5em;\n  -webkit-animation: backgroundfadein 8.2s;\n  margin-left: 0.5em !important; }\n  .audio-title {\n    margin: -0;\n    -webkit-animation: fadeinslower 7.1s; }\n  .audio-examples {\n    margin: 0;\n    margin-bottom: 1em;\n    -webkit-animation: fadeinslower 7.1s; }\n\n.footer {\n  display: flex;\n  justify-content: center;\n  margin-top: 0.5em;\n  -webkit-animation: fadeinslower 8.5s; }\n\nh1, h2 {\n  color: #98c0f1; }\n  h1 h3, h2 h3 {\n    text-align: center !important; }\n\nh3 {\n  color: white;\n  margin: 0.25em;\n  font-weight: 100;\n  font-size: 2em; }\n\nh2 {\n  margin-top: 0.5 em;\n  margin: 0.5em;\n  margin-bottom: 0.5em;\n  font-size: 2em;\n  font-weight: 300; }\n  h2 h1 {\n    color: #98c0f1; }\n\nh1 {\n  -webkit-animation: colorchange 2s;\n  font-size: 4.5em;\n  -webkit-text-fill-color: #d7d8fa00;\n  -webkit-text-stroke-width: 1px;\n  -webkit-text-stroke-color: #97c0f1; }\n\na {\n  color: #98c0f1; }\n\na:hover {\n  color: #4285f4; }\n\nimg {\n  -webkit-animation: picturemove 5s;\n  width: 11em;\n  height: 11em;\n  border-radius: 5.5em;\n  margin-right: 1.1em;\n  margin-bottom: 0;\n  float: left; }\n\n@-webkit-keyframes picturemove {\n  0% {\n    -webkit-filter: grayscale(1);\n    width: 50vw;\n    height: 50vw;\n    border-radius: 0;\n    margin-top: -6em;\n    margin-left: calc(25vw - 2.5em); }\n  10% {\n    -webkit-filter: grayscale(1); }\n  40% {\n    -webkit-filter: grayscale(0);\n    width: 50vw;\n    height: 50vw;\n    border-radius: 0;\n    position: absolute;\n    margin-top: -3em;\n    margin-left: calc(25vw - 2.5em); }\n  60% {\n    -webkit-filter: grayscale(0);\n    width: 50vw;\n    height: 50vw;\n    border-radius: 0;\n    position: absolute;\n    margin-top: -3em;\n    margin-left: calc(25vw - 2.5em); }\n  100% {\n    width: 11em;\n    height: 11em;\n    border-radius: 5.5em;\n    position: absolute; } }\n\n@-webkit-keyframes backgroundfadein {\n  0% {\n    background-color: #1a1a1a; }\n  60% {\n    background-color: #1a1a1a; }\n  100% {\n    background-color: #2b2b2b; } }\n\n@-webkit-keyframes fadein {\n  0% {\n    opacity: 0; }\n  75% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes backgroundfadein {\n  0% {\n    background-color: #1a1a1a; }\n  80% {\n    background-color: #1a1a1a; }\n  100% {\n    opacity: #2b2b2b; } }\n\n@-webkit-keyframes fadeinslower {\n  0% {\n    opacity: 0.001; }\n  10% {\n    opacity: 0.001; }\n  90% {\n    opacity: 0.001; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes colorchange {\n  0% {\n    color: #1a1a1a;\n    margin-top: 0.4em; }\n  80% {\n    color: #95a7bd; }\n  100% {\n    color: #98c0f1;\n    margin-top: 0; } }\n\n@-webkit-keyframes colorchange2 {\n  0% {\n    color: #1a1a1a; }\n  70% {\n    color: #1a1a1a; }\n  100% {\n    color: #e1e1ed; } }\n\n@-webkit-keyframes greyscale {\n  0% {\n    -webkit-filter: grayscale(1);\n    /* Google Chrome & Webkit Nightlies */ }\n  100% {\n    -webkit-filter: grayscale(0);\n    /* Google Chrome & Webkit Nightlies */ } }\n\n@-webkit-keyframes backgroundpicfadein {\n  0% {\n    background-image: linear-gradient(to bottom, #1a1a1a 0%, #1a1a1a 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  75% {\n    background-image: linear-gradient(to bottom, #1a1a1a 0%, #1a1a1a 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  77% {\n    background-image: linear-gradient(to bottom, rgba(26, 26, 26, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  80% {\n    background-image: linear-gradient(to bottom, rgba(26, 26, 26, 0.9) 0%, rgba(26, 26, 26, 0.9) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  83% {\n    background-image: linear-gradient(to bottom, rgba(26, 26, 26, 0.85) 0%, rgba(26, 26, 26, 0.85) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  85% {\n    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.8) 0%, rgba(20, 20, 20, 0.8) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  87% {\n    background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.75) 0%, rgba(10, 10, 10, 0.75) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  90% {\n    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  95% {\n    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  100% {\n    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); } }\n\n@media (max-width: 765px) {\n  img {\n    margin-right: 40%;\n    margin-bottom: 1em; } }\n\n@media (max-width: 640px) {\n  .main {\n    flex-direction: column; }\n  .audio {\n    margin: 1em !important; }\n  img {\n    margin-right: 3em; }\n  .about {\n    margin: 1em;\n    height: inherit; } }\n\n@media (max-width: 475px) {\n  .about {\n    height: inherit;\n    margin-bottom: 1em;\n    margin: 1em; }\n  .audio {\n    margin: 1em; } }\n\n@media (max-width: 420px) {\n  a {\n    font-size: 0.7em; } }\n\n@media (max-width: 400px) {\n  .about {\n    height: inherit; }\n  img {\n    margin-right: 40%; } }\n\n@media (max-width: 420px) {\n  .audio-examples {\n    margin-left: 0.2em; } }\n\n@media (min-width: 1000px) {\n  img {\n    margin-bottom: 4em; } }\n", ""]);
+exports.push([module.i, "html {\n  background-color: #1a1a1a;\n  color: #e1e1ed;\n  font-weight: 100; }\n\nbody {\n  font-family: 'Montserrat' !important; }\n  body a {\n    text-decoration: none; }\n  body label {\n    display: block; }\n  body nav a {\n    display: inline-block;\n    margin: 1em; }\n  body form div {\n    margin: 1em;\n    display: inline-block; }\n\n.main {\n  background-color: #1a1a1a;\n  display: flex;\n  border-radius: 1em; }\n  .main div {\n    flex-grow: 1;\n    margin-left: 1em;\n    margin-right: 1em; }\n\n.navbar {\n  display: flex;\n  flex-direction: column;\n  margin-top: 1em;\n  -webkit-animation: backgroundpicfadein 3s;\n  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg);\n  background-position: center;\n  border-radius: 1em;\n  height: 9em;\n  margin-bottom: 1em;\n  background-repeat-x: no-repeat;\n  background-size: 100%; }\n  .navbar-title {\n    margin-top: 0;\n    justify-content: center;\n    display: flex;\n    text-align: center; }\n  .navbar-info {\n    justify-content: center;\n    display: flex; }\n  .navbar h1 {\n    margin: 0; }\n  .navbar h3 {\n    margin: 0.25em;\n    margin-bottom: 0.5em;\n    color: white !important;\n    -webkit-animation: colorchange2 3.4s; }\n\n.about {\n  -webkit-animation: backgroundfadein 6.8s;\n  background-color: #2b2b2b;\n  border-radius: 0.5em;\n  margin-right: 0.5em !important; }\n  .about-content {\n    max-width: 35em;\n    margin-bottom: 1em; }\n    .about-content-bio {\n      -webkit-animation: fadeinslower 5.7s; }\n  .about-title {\n    display: flex;\n    flex-direction: row;\n    -webkit-animation: fadeinslower 5.7s; }\n\n.audio {\n  background-color: #2b2b2b;\n  border-radius: 0.5em;\n  -webkit-animation: backgroundfadein 8.2s;\n  margin-left: 0.5em !important; }\n  .audio-title {\n    margin: -0;\n    -webkit-animation: fadeinslower 7.1s; }\n  .audio-examples {\n    margin: 0;\n    margin-bottom: 1em;\n    -webkit-animation: fadeinslower 7.1s; }\n\n.footer {\n  display: flex;\n  justify-content: center;\n  margin-top: 0.5em;\n  -webkit-animation: fadeinslower 8.5s; }\n\nh1, h2 {\n  color: #98c0f1; }\n  h1 h3, h2 h3 {\n    text-align: center !important; }\n\nh3 {\n  color: white;\n  margin: 0.25em;\n  font-weight: 100;\n  font-size: 2em; }\n\nh2 {\n  margin-top: 0.5 em;\n  margin: 0.5em;\n  margin-bottom: 0.5em;\n  font-size: 2em;\n  font-weight: 300; }\n  h2 h1 {\n    color: #98c0f1; }\n\nh1 {\n  -webkit-animation: colorchange 2s;\n  font-size: 10vh;\n  -webkit-text-fill-color: #d7d8fa00;\n  -webkit-text-stroke-width: 1px;\n  -webkit-text-stroke-color: #97c0f1; }\n\na {\n  color: #98c0f1; }\n\na:hover {\n  color: #4285f4; }\n\nimg {\n  -webkit-animation: picturemove 5s;\n  width: 11em;\n  height: 11em;\n  border-radius: 5.5em;\n  margin-right: 1.1em;\n  margin-bottom: 0;\n  float: left; }\n\n@-webkit-keyframes picturemove {\n  0% {\n    -webkit-filter: grayscale(1);\n    width: 50vw;\n    height: 50vw;\n    border-radius: 0;\n    margin-top: -6em;\n    margin-left: calc(25vw - 2.5em); }\n  10% {\n    -webkit-filter: grayscale(1); }\n  40% {\n    -webkit-filter: grayscale(0);\n    width: 50vw;\n    height: 50vw;\n    border-radius: 0;\n    position: absolute;\n    margin-top: -3em;\n    margin-left: calc(25vw - 2.5em); }\n  60% {\n    -webkit-filter: grayscale(0);\n    width: 50vw;\n    height: 50vw;\n    border-radius: 0;\n    position: absolute;\n    margin-top: -3em;\n    margin-left: calc(25vw - 2.5em); }\n  100% {\n    width: 11em;\n    height: 11em;\n    border-radius: 5.5em;\n    position: absolute; } }\n\n@-webkit-keyframes backgroundfadein {\n  0% {\n    background-color: #1a1a1a; }\n  60% {\n    background-color: #1a1a1a; }\n  100% {\n    background-color: #2b2b2b; } }\n\n@-webkit-keyframes fadein {\n  0% {\n    opacity: 0; }\n  75% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes backgroundfadein {\n  0% {\n    background-color: #1a1a1a; }\n  80% {\n    background-color: #1a1a1a; }\n  100% {\n    opacity: #2b2b2b; } }\n\n@-webkit-keyframes fadeinslower {\n  0% {\n    opacity: 0.001; }\n  10% {\n    opacity: 0.001; }\n  90% {\n    opacity: 0.001; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes colorchange {\n  0% {\n    color: #1a1a1a;\n    margin-top: 0.4em; }\n  80% {\n    color: #95a7bd; }\n  100% {\n    color: #98c0f1;\n    margin-top: 0; } }\n\n@-webkit-keyframes colorchange2 {\n  0% {\n    color: #1a1a1a; }\n  70% {\n    color: #1a1a1a; }\n  100% {\n    color: #e1e1ed; } }\n\n@-webkit-keyframes greyscale {\n  0% {\n    -webkit-filter: grayscale(1);\n    /* Google Chrome & Webkit Nightlies */ }\n  100% {\n    -webkit-filter: grayscale(0);\n    /* Google Chrome & Webkit Nightlies */ } }\n\n@-webkit-keyframes backgroundpicfadein {\n  0% {\n    background-image: linear-gradient(to bottom, #1a1a1a 0%, #1a1a1a 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  75% {\n    background-image: linear-gradient(to bottom, #1a1a1a 0%, #1a1a1a 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  77% {\n    background-image: linear-gradient(to bottom, rgba(26, 26, 26, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  80% {\n    background-image: linear-gradient(to bottom, rgba(26, 26, 26, 0.9) 0%, rgba(26, 26, 26, 0.9) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  83% {\n    background-image: linear-gradient(to bottom, rgba(26, 26, 26, 0.85) 0%, rgba(26, 26, 26, 0.85) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  85% {\n    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0.8) 0%, rgba(20, 20, 20, 0.8) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  87% {\n    background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.75) 0%, rgba(10, 10, 10, 0.75) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  90% {\n    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  95% {\n    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); }\n  100% {\n    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(https://www.sweetwater.com/insync/media/2013/05/recording-studio-microphone.jpg); } }\n\n@media (max-width: 765px) {\n  img {\n    margin-right: 40%;\n    margin-bottom: 1em; } }\n\n@media (max-width: 640px) {\n  .main {\n    flex-direction: column; }\n  .audio {\n    margin: 1em !important; }\n  img {\n    margin-right: 3em; }\n  .about {\n    margin: 1em;\n    height: inherit; } }\n\n@media (max-width: 475px) {\n  .about {\n    height: inherit;\n    margin-bottom: 1em;\n    margin: 1em; }\n  .audio {\n    margin: 1em; } }\n\n@media (max-width: 420px) {\n  a {\n    font-size: 0.7em; } }\n\n@media (max-width: 400px) {\n  .about {\n    height: inherit; }\n  img {\n    margin-right: 40%; } }\n\n@media (max-width: 420px) {\n  .audio-examples {\n    margin-left: 0.2em; } }\n\n@media (min-width: 1000px) {\n  img {\n    margin-bottom: 4em; } }\n", ""]);
 
 // exports
 
@@ -21795,7 +21888,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* unused harmony export createProvider */
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["b"] = createProvider;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
@@ -21873,7 +21966,7 @@ function createProvider() {
   return Provider;
 }
 
-/* unused harmony default export */ var _unused_webpack_default_export = (createProvider());
+/* harmony default export */ __webpack_exports__["a"] = (createProvider());
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
@@ -21990,7 +22083,7 @@ function createConnect() {
   };
 }
 
-/* unused harmony default export */ var _unused_webpack_default_export = (createConnect());
+/* harmony default export */ __webpack_exports__["a"] = (createConnect());
 
 /***/ }),
 /* 85 */
@@ -22245,13 +22338,14 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(84);
-/* unused harmony reexport Provider */
-/* unused harmony reexport createProvider */
-/* unused harmony reexport connectAdvanced */
-/* unused harmony reexport connect */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
 
 
 
@@ -22459,7 +22553,7 @@ MemoryRouter.propTypes = {
 };
 
 
-/* unused harmony default export */ var _unused_webpack_default_export = (MemoryRouter);
+/* harmony default export */ __webpack_exports__["a"] = (MemoryRouter);
 
 /***/ }),
 /* 94 */
@@ -22550,7 +22644,7 @@ Prompt.contextTypes = {
 };
 
 
-/* unused harmony default export */ var _unused_webpack_default_export = (Prompt);
+/* harmony default export */ __webpack_exports__["a"] = (Prompt);
 
 /***/ }),
 /* 95 */
@@ -22658,7 +22752,7 @@ Redirect.contextTypes = {
 };
 
 
-/* unused harmony default export */ var _unused_webpack_default_export = (Redirect);
+/* harmony default export */ __webpack_exports__["a"] = (Redirect);
 
 /***/ }),
 /* 96 */
@@ -22841,7 +22935,7 @@ StaticRouter.childContextTypes = {
 };
 
 
-/* unused harmony default export */ var _unused_webpack_default_export = (StaticRouter);
+/* harmony default export */ __webpack_exports__["a"] = (StaticRouter);
 
 /***/ }),
 /* 97 */
@@ -22935,31 +23029,32 @@ Switch.propTypes = {
 };
 
 
-/* unused harmony default export */ var _unused_webpack_default_export = (Switch);
+/* harmony default export */ __webpack_exports__["a"] = (Switch);
 
 /***/ }),
 /* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__MemoryRouter__ = __webpack_require__(93);
-/* unused harmony reexport MemoryRouter */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__MemoryRouter__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Prompt__ = __webpack_require__(94);
-/* unused harmony reexport Prompt */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_1__Prompt__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Redirect__ = __webpack_require__(95);
-/* unused harmony reexport Redirect */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_2__Redirect__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(37);
-/* unused harmony reexport Route */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_3__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(18);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_4__Router__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_4__Router__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__StaticRouter__ = __webpack_require__(96);
-/* unused harmony reexport StaticRouter */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_5__StaticRouter__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Switch__ = __webpack_require__(97);
-/* unused harmony reexport Switch */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_6__Switch__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__matchPath__ = __webpack_require__(19);
-/* unused harmony reexport matchPath */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_7__matchPath__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__withRouter__ = __webpack_require__(99);
-/* unused harmony reexport withRouter */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_8__withRouter__["a"]; });
 
 
 
@@ -23022,7 +23117,7 @@ var withRouter = function withRouter(Component) {
   return __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default()(C, Component);
 };
 
-/* unused harmony default export */ var _unused_webpack_default_export = (withRouter);
+/* harmony default export */ __webpack_exports__["a"] = (withRouter);
 
 /***/ }),
 /* 100 */

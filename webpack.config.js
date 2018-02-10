@@ -1,5 +1,6 @@
 const LiveReloadPlugin = require('webpack-livereload-plugin')
 const isDev = process.env.NODE_ENV === 'development'
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: './client/index.js',
@@ -15,7 +16,7 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
         query: {
-          presets: ['react']
+          presets: ['react', 'babel-preset-es2015']
       }
       },
       {
