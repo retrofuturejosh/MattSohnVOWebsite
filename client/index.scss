@@ -172,6 +172,24 @@ a:hover {
   color: #4285f4;
 }
 
+.audio-player {
+  max-width: 14rem;
+  min-width: 10rem;
+  margin-left: 1rem !important;
+  filter: invert(100%);
+  margin-top: 1rem;
+  div {
+    margin: 1%;
+  }
+}
+
+#play {
+  margin-left: 0;
+  img {
+    margin-left: 0 !important;
+  }
+}
+
 img {
   // -webkit-animation: greyscale 10s 1;
   -webkit-animation: picturemove 5s;
